@@ -1,21 +1,62 @@
-<!DOCTYPE html>
-
-<html lang="ru" xmlns="http://www.w3.org/1999/xhtml">
-<head>
-    <meta charset="utf-8" />
-    <title>
-        Персональный  Палёнова К.И.
-    </title>
-</head>
-<body bgcolor="#fa8e47">
-    <h1 style="text-align:center">
-        Персональный сайт Палёнова Кирилла
-    </h1>
-    <h3 style="text-align:center">Контакты</h3>
-    <ul style="margin-left: 480px">
-        <li><strong>Email: </strong><i>kpalenov@mail.ru</i></li>
-        <li><strong>Телефон: </strong><i>*засекречен*</i></li>
-        <li><strong>VK: </strong><i>https://vk.com/kir_palenov</i></li>
-    </ul>
-</body>
+<html>
+    <head>
+        <title>
+            Персональный  Палёнова К.И.
+        </title>
+        <style>
+            #maininfo{                
+                text-align: center;
+                font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                font-size: 14pt;
+            }
+            #name{
+                background-color: lightsalmon;
+            }
+            #email{
+                background-color: lightskyblue;
+            }
+            #themekurs, #themedipl{
+                background-color: lightgreen;
+            }
+            .anim{
+                opacity: 0.6;
+                cursor: pointer;
+            }
+            /* после наведения */
+            .anim:hover{
+                opacity: 1;
+            }
+            .shown{
+                visibility: visible;
+            }
+            .hidden{
+                height: 0;
+                visibility: hidden;
+            }
+        </style>
+        <script>
+            function showhide(){
+                setTimeout(function() {
+                    if(document.getElementById("email").classList.contains("shown")){
+                    document.getElementById("email").classList.remove("shown");
+                    document.getElementById("email").classList.add("hidden");
+                    return;
+                    }
+                    if(document.getElementById("email").classList.contains("hidden")){
+                        document.getElementById("email").classList.remove("hidden");
+                        document.getElementById("email").classList.add("shown");
+                        return;
+                    }                                        
+                }, 200);                               
+            }
+        </script>
+    </head>
+    <body>
+        <div id="maininfo" onselectstart = "return false" onmousedown="return false">
+            <div id="name" class="anim" onclick="showhide();"><i>Палёнов Кирилл Игоревич</i></div>
+            <div id="email" class="anim, hidden"><a href="mailto:kpalenov@mail.ru">kpalenov@mail.ru</a></div>
+            <div id="themekurs"><i>Тема курсовой</i>: "Создание подсистемы формирования оценок мнений с учётом семантики логики аргументации"</div>
+            <div id="themedipl"><i>Тема диплома</i>: "Разработка программной оболочки для сравнения различных методов интеллектуального анализа данных"</div>
+        </div>
+    </body>
 </html>
