@@ -1,0 +1,175 @@
+/* ==== Google font ==== */
+@import url(https://fonts.googleapis.com/css?family=Merriweather);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+/* ---------------------------------------------------------------------------- */
+/* ------------------------------------Html-Body------------------------------- */
+/* ---------------------------------------------------------------------------- */
+body {font-family: 'Merriweather', serif;color: #666;background: #fff;font-size: 14px;line-height: 1.6em;font-weight: 400;}
+html, body {width:100%; padding:0; margin:0;}
+
+::-moz-selection{background:#000;color:#fff;text-shadow:none}
+::selection{background:#000;color:#fff;text-shadow:none}
+/* ---------------------------------------------------------------------------- */
+
+img{max-width:100%;	height: auto;width: auto\9; /* ie8 */}
+
+h1 {font-size: 36px;}
+h2 {font-size: 34px;}
+h3 {font-size: 30px;}
+h4 {font-size: 26px;}
+h5 {font-size: 24px;}
+h6 {font-size: 20px;}
+
+h1,h2,h3,h4,h5,h6 {font-weight: 600;color: #000;}
+
+p { color:#333;}
+
+a {
+   color: #17B3E8;
+   -webkit-transition: all .2s ease-in-out;
+   -moz-transition: all .2s ease-in-out;
+   transition: all .2s ease-in-out;
+}
+
+a:hover,
+a:focus {color: #666;text-decoration: none;}
+
+.text-primary {
+    color: #9966CC;
+}
+
+hr{max-width: 50px;
+    border-color: #9966CC;
+    border-width: 5px;}
+
+/* ---------------------------------------------------------------------------- */
+/* ----------------------------------Header------------------------------------ */
+/* ---------------------------------------------------------------------------- */
+header {background: url(img/banner1.jpg)  no-repeat scroll center center ;-webkit-background-size: cover;-moz-background-size: cover;background-size: cover;-o-background-size: cover;height: 500px;}
+@media all and (max-width: 660px) {
+  /* =Header
+  -------------------------------------------------------------- */
+  header h1#logo {
+    display: block;
+    float: none;
+    margin: 0 auto;
+    height: 100px;
+    line-height: 100px;
+    text-align: center; }
+  header nav {
+    display: block;
+    float: none;
+    height: 50px;
+    text-align: center;
+    margin: 0 auto; }
+    header nav a {
+      line-height: 50px;
+      margin: 0 10px; }
+  header.smaller {
+    height: 75px; }
+    header.smaller h1#logo {
+      height: 40px;
+      line-height: 40px;
+      font-size: 30px; }
+    header.smaller nav {
+      height: 35px; }
+      header.smaller nav a {
+        line-height: 35px; } }
+
+
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus{background: none;}
+.navbar-default {border-color: transparent;background-color: #222;}
+.navbar-default .navbar-brand {font-family: Helvetica,Arial,cursive;color: #9966CC;}
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus,
+.navbar-default .navbar-brand:active,
+.navbar-default .navbar-brand.active {color: #9966CC;}
+
+.navbar-default .navbar-collapse {border-color: rgba(255,255,255,.02);}
+
+.navbar-default .navbar-toggle {border: none;background-color: #9966CC;}
+.navbar-default .navbar-toggle span.icon-bar{background-color: #fff;}
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {background-color: #9966CC;}
+
+.navbar-default .nav li a {text-transform: uppercase;font-family: Helvetica,Arial,sans-serif;font-weight: bold;letter-spacing: 1px;color: #fff;}
+.navbar-default .nav li a:last-child{color: #fff;}
+.navbar-default .nav li a:hover,
+.navbar-default .nav li a:focus {outline: 0;color: #9966CC;}
+
+.navbar-default .navbar-nav>.active>a {border-radius: 0;color: #ddd;background: none;}
+
+
+@media(min-width:768px) {
+    .navbar-default {
+        padding: 20px 0;
+        border: 0;
+        background-color: transparent;
+        -webkit-transition: padding .3s;
+        -moz-transition: padding .3s;
+        transition: padding .3s;
+    }
+
+    .navbar-default .navbar-brand {
+        font-size: 2em;
+        -webkit-transition: all .3s;
+        -moz-transition: all .3s;
+        transition: all .3s;
+    }
+    .navbar-default.navbar-shrink {
+        padding: 0;
+        background-color: #fff;
+		border-bottom: 2px solid #9966CC;
+    }
+	
+	.navbar-default.navbar-shrink .nav li a{color: #444;}
+	.navbar-default.navbar-shrink .nav li a:hover,
+	.navbar-default.navbar-shrink .nav li a:focus
+	{color: #9966CC;}
+	
+    .navbar-default.navbar-shrink .navbar-brand {
+        font-size: 1.5em;
+    }
+}
+
+
+/* Carousel Header Styles */
+.header-text {position: absolute;top: 25%;left: 1.8%;right: auto;width: 96.66666666666666%;color: #fff;}
+.header-text h1{margin-top: 0;margin-bottom: 0;text-transform: uppercase;font-weight: bold;color: #fff;font-size: 70px;}
+.header-text hr{margin: 30px auto;}
+.header-text p{ margin-bottom: 50px;font-size: 16px;font-weight: 300;color: #fff;}
+.header-text .btn-header-1{background-color: rgba(255, 255, 255, 0.3);padding: 18px 45px;font-weight: bold;font-size: 16px;border: 3px solid #fff;border-radius: 4px;}
+.header-text .btn-header-1:hover{color: #fff;background-color: rgba(255, 255, 255, 0.2);}
+.header-text .btn-header-2{background-color: #9966CC;border:none;padding: 18px 45px;font-weight: bold;font-size: 16px;border: 3px solid #9966CC;border-radius: 4px;}
+.header-text .btn-header-2:hover{background-color: rgba(153, 102, 204, 0.9);color: #fff;border: 3px solid rgba(153, 102, 204, 0.9);}
+
+
+/* ---------------------------------------------------------------------------- */
+/* ---------------------------------Content------------------------------------ */
+/* ---------------------------------------------------------------------------- */	
+
+/* ---HomePage--- */
+.box-content {padding: 100px 0;}
+.box-content .heading{margin-bottom: 50px; text-align: center;}
+.box-content.box-style-1{background-color: #F6F7F8;}
+.box-content.box-style-2{background-color: #fff;}
+
+.box-content.box-2 .service-box {margin: 20px auto 0;}
+.box-content.box-2 .service-box h3{font-size: 22px;}
+
+
+/* ---------------------------------------------------------------------------- */
+/* ----------------------------------Footer------------------------------------ */
+/* ---------------------------------------------------------------------------- */
+footer{color: #999999;background-color:#222222;font-size: 13px;}
+footer p{color: #666}
+footer ul {padding: 0;margin-top: 10px;}
+footer ul li{list-style: none;}
+footer a {color: #999;}
+footer a:hover {color: #fff;text-decoration: underline;}	
+
+footer .bottom-footer{background-color: #29282E;color: #fff;text-align: center;padding: 10px 0px;}
+footer ul.social-buttons li a{display: block;width: 35px;height: 35px;border-radius: 100%;font-size: 20px;color: #222;background-color: #fff;transition-duration: 0.4s;}
+footer ul.social-buttons li a:hover{background-color: #9966CC;color: #fff;}
+footer ul.social-buttons li a i{margin-top: 7px;}
