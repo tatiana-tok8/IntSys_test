@@ -1,0 +1,84 @@
+h1 { 
+    font-size: 400%; /* Размер шрифта в процентах */ 
+   } 
+            /* https://html5book.ru/css-figury/ */
+			
+			.button{
+                width: 50; /*Ширина кнопки*/
+                height: 50; /*Высота кнопки*/
+                margin: 2; /*Расстояние от одной кнопки до другой*/
+                cursor: pointer;
+                background: #FF69B4; /*Цвет кнопки*/
+                border: 7px double black; /*Рамочка двойная*/
+				border-radius: 50%;
+            }
+			/*.button{
+              width:100px;
+ height:100px;
+ display:block;
+ border-radius:50px;
+ -moz-border-radius:50px;
+ -webkit-border-radius:50px;
+ -khtml-border-radius:50px;
+ font-size:20px; color:#fff;
+ line-height:100px;
+ text-align:center;
+ background:#000
+            }*/
+/*			
+.d1 {
+width: 100px; 
+height: 100px;
+background: #83A7C9;
+border-radius: 50%;
+}*/
+            .textview{ /*то, что вводится*/
+                width: 257;
+                font-size: 250%; /*Размер шрифта*/
+				margin: 10;  /* -> */
+               /* padding: 50;*/
+                border: 7px dashed purple;
+                color: #F0F0F0;
+				text-shadow: 8px 10px 20px black; /* Параметры тени */
+				background: linear-gradient(to right, #e91e63, #3f51b5);
+            }
+			
+			/*top-right-bottom-left*/
+				/*сверху-справа-снизу-слева*/
+				/*сверху - справа и слева - снизу*/
+				/*сверху и снизу - справа и слева*/
+				/*для всех*/
+			
+			table {
+				background: linear-gradient(to right, #e91e63, #3f51b5); /* Цвет фона таблицы */
+				border: 1px solid black ;
+				border-radius: 5px;
+				/*border-color: #cacd58 #5faf8a #b9cea5 #aab238;*/
+					}
+   
+            .wi{
+                position: absolute; /*Указывает, что элемент абсолютно позиционирован, при этом другие элементы отображаются на веб-странице словно абсолютно позиционированного элемента и нет. */
+                top: 50%;
+                left: 50%;
+                transform: translateX(-50%) translateY(-50%);
+				/*Трансформирует элемент, в частности, позволяет его масштабировать, вращать, сдвигать, наклонять, а также комбинировать виды трансформаций.*/
+            }
+            .bg{
+                background: linear-gradient(to right, #e91e63, #3f51b5, #3f51b5, #3f51b5, #3f51b5, #3f51b5, #e91e63 )
+            }
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			*{
+	margin: 0;
+    padding: 7;
+ }
