@@ -1,0 +1,28 @@
+body {   
+	background-image: url(miku.jpg);      
+	background-position: center center;      
+	background-repeat: no-repeat;      
+	background-attachment: fixed;      
+	background-size: cover;      
+	background-color: #464646; 
+	font-family: 'Roboto Slab', 'Comic Sans MS';
+	color: LightCyan;
+	text-shadow: 4px 2px black;
+}
+
+DIV.container {
+	margin: 0;
+    	position: absolute;
+    	top: 72%;
+    	left: 43%;
+    	margin-right: -50%;
+    	transform: translate(-50%, -50%);
+	border-style:solid;
+	border-color:#287EC7;
+	padding: 9px;
+
+ }
+
+DIV.container h2{
+	color: Cyan;	
+ }
